@@ -1,0 +1,39 @@
+#Weather api key
+weather:
+  api:
+    key: df03baabc973bf01789b64b8366ef13f
+#for database configuration setup
+spring:
+  application:
+    name: journalApp
+  datasource:
+    url: jdbc:mysql://localhost:3306/journal_db
+    password: Dattatray@4141
+    username: root
+  #redis configuration
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  #mail sender configuration
+  mail:
+      host: smtp.gmail.com
+      port: 587
+      username: dattatraygujar77@gmail.com
+      password: oajj jjgb lapp adnh
+      properties:
+        mail:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+#to set server port and path
+server:
+  port: 8080
+  #also can set path
+#  servlet:
+#    context-path: 
